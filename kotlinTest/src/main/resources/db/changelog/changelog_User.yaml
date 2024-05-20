@@ -1,0 +1,128 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: mos
+      changes:
+        - createTable:
+            tableName: userapi
+            columns:
+              - column:
+                  name: code
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: usercode
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: username
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: userpassword
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: usestatus
+                  type: boolean
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 2
+      author: mos
+      changes:
+        - createTable:
+            tableName: userapi
+            columns:
+              - column:
+                  name: code
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: usercode
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: username
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: userpassword
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: use_tatus
+                  type: boolean
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 3
+      author: mos
+      changes:
+        - createTable:
+            tableName: userapi
+            columns:
+              - column:
+                  name: code
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: usercode
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: username
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: email
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: userpassword
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: use_status
+                  type: boolean
+                  constraints:
+                    nullable: false
